@@ -17,9 +17,7 @@ description: 获取中国互联网各平台实时热搜榜单，包括微博、�
 
 | 平台 | URL | 包含来源 |
 |------|-----|---------|
-| 今日热榜 | https://tophub.today | 微博、知乎、B站、头条、GitHub 等 50+ 来源 |
 | 热榜今日 | https://rebang.today | 微博、抖音、B站、知乎、头条等 |
-| 媒帮派热搜 | https://hot.meibp.com | 微博、抖音、知乎、快手、百度等 |
 
 ---
 
