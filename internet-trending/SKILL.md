@@ -29,9 +29,7 @@ description: 获取中国互联网各平台实时热搜榜单，包括微博、�
 |------|-----|------|
 | 微博热搜 | https://s.weibo.com/top/summary | 偶尔需要登录 Cookie，可改用聚合站 |
 | 知乎热榜 | https://www.zhihu.com/hot | 偶尔需要登录，聚合站可兜底 |
-| 百度热搜 | https://top.baidu.com/board | 稳定可访问 |
-| 今日头条热榜 | https://www.toutiao.com/hot-event/hot-board/ | 稳定可访问 |
-| 抖音热搜 | https://www.douyin.com/discover | 以 App 为主，网页版可能受限 |
+| 百度热搜 | https://top.baidu.com/board | 稳定可访问 ||
 
 ### 视频 / 娱乐
 
@@ -54,7 +52,7 @@ description: 获取中国互联网各平台实时热搜榜单，包括微博、�
 
 1. **明确用户需求**：是要全平台热点、特定平台热搜，还是某一领域（科技/娱乐/社会）的热点？
 2. **选择入口**：
-   - 宽泛热点 → 首选 `tophub.today` 或 `rebang.today`
+   - 宽泛热点 → 首选 `rebang.today`
    - 指定平台 → 使用对应官方 URL
    - 技术方向 → 优先 `github.com/trending` + `v2ex.com`
 3. **抓取内容**：用 WebFetch 获取页面，提取热搜词条和热度数值
@@ -62,12 +60,3 @@ description: 获取中国互联网各平台实时热搜榜单，包括微博、�
 
 ---
 
-## WebSearch 兜底模板
-
-当 WebFetch 失败（需登录 / 内容为空）时，用以下格式搜索：
-
-```
-微博热搜 今日 site:weibo.com
-知乎热榜 今天
-百度热搜榜 今日热点
-```
